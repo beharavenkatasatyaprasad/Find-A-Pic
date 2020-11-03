@@ -1,0 +1,21 @@
+body{
+    background-color: azure;
+    margin: 2%;
+}
+.content{
+    font-family: "Carter One";
+    letter-spacing: 1px;
+}
+
+#items{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@media(max-width:600px){
+    .content h1{
+        font-size: 1.5em;
+        transition-delay: 5ms;
+    }
+}
