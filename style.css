@@ -1,21 +1,105 @@
 body{
-    background: #e2e1e0;
-    margin: 2%;
-}
-.content{
-    font-family: "Carter One";
-    letter-spacing: 1px;
+    background: aliceblue;
+    font-family: sans-serif;
 }
 
-#items{
+.banner-img{
+    background: url(imgs/searchbar-bg.jpg) center top;
+    background-size: cover;
+}
+.bg-img-layer{
+    padding: 6%;
+}
+
+.input-group{
+    margin: 4% 0%;
+}
+
+.data-card{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+    margin: 4%;
+}
+
+.data img{
     width: 100%;
-    height: auto;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    margin-bottom:35px;
+    height: 300px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
-@media(max-width:600px){
-    .content h1{
-        font-size: 1.5em;
+.img-title{
+    font-size: 130%;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+
+.img-title p{
+    font-size: 80% !important;
+    letter-spacing: 2px;
+}
+
+.button {
+    background-color: #3b5998 !important;
+    border: none !important;
+    color: white;
+    border-radius: 0px;
+    padding: 15px 32px;
+    font-size: 160%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 0.8s;
+  }
+.button:hover {
+    background-color: rgb(167, 161, 161) !important;
+    border: none !important;
+    font-weight: bold;
+    letter-spacing:5px;
+    color: #3b5998 ;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+
+.likes-btn{
+    border-bottom-right-radius: 0px !important;
+}
+
+.download-btn{
+    border-bottom-left-radius: 0px !important;
+}
+
+.search-btn{
+    background-color:#3b5998;
+    letter-spacing:2px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.search-btn:hover{
+    background-color: rgb(167, 161, 161) !important;
+    color:#3b5998;
+    border: 1px solid transparent;
+    letter-spacing:4px;
+}
+
+@media(max-width:570px){
+
+    .likes-btn{
+        border-bottom-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
     }
+    
+    .download-btn{
+        border-bottom-right-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+    }
+    
 }
