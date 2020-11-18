@@ -1,4 +1,4 @@
-<a href="https://resto-finder-webapp.netlify.app/">
+<a href="https://find-a-pic-webapp.netlify.app/">
     <img src="https://github.com/beharavenkatasatyaprasad/Find-A-Pic/blob/main/imgs/findApic_logo.png" alt=""  align="right" height="60">
 </a>
 
