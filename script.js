@@ -1,6 +1,5 @@
 const data_container = document.getElementById('data-container')
 document.getElementById('search-btn').addEventListener('click',()=>{
-    //    const user_query = document.getElementById('search').value;
        const requestOptions = {
            method: 'GET',
            redirect: 'follow'  
@@ -9,7 +8,6 @@ document.getElementById('search-btn').addEventListener('click',()=>{
             const user_query = document.getElementById('search').value
             const res = await fetch("https://api.unsplash.com/search/photos?query="+user_query+"&client_id=1Dj4HIVcUDdUb6FwUGBdg5ZRNES7rv0Bm6ZYt8mQG9c&per_page=30" , requestOptions);
             const data = await res.json();
-            // console.log(data);
             displayData(data);
         }
         getData()
@@ -24,7 +22,6 @@ function  displayData(data){
         photocard.className = 'data-card';
         photocard.classList.add('bg-light');
         photocard.classList.add('col-sm-5');
-        // photocard.classList.add('m-1');
         photocard.classList.add('p-0');
         photocard.innerHTML =  `
             <div class="data-img">
@@ -47,7 +44,7 @@ function  displayData(data){
                     </button>
                 </div>
                 <div class="download col-sm-6 p-0 m-0" >
-                    <button onclick="window.location.href="${photo.links.download}" class="btn button btn-lg btn-block download-btn" type="button">
+                    <button onclick="window.location.href='${photo.links.download}'" class="btn button btn-lg btn-block download-btn" type="button">
                         Download
                         <i class="fa fa-download" aria-hidden="true"></i>
                     </button>
