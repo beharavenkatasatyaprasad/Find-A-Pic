@@ -1,5 +1,5 @@
 <a href="https://resto-finder-webapp.netlify.app/">
-    <img src="imgs/RestoFinderLogo.png" alt=""  align="right" height="60">
+    <img src="https://github.com/beharavenkatasatyaprasad/Find-A-Pic/blob/main/imgs/findApic_logo.png" alt=""  align="right" height="60">
 </a>
 
 ## Welcome! 👋
